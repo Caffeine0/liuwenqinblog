@@ -711,122 +711,6 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper.dock .menu,
-.cover-wrapper.featured .menu,
-.cover-wrapper.focus .menu {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.cover-wrapper.dock .menu .list-h a,
-.cover-wrapper.featured .menu .list-h a,
-.cover-wrapper.focus .menu .list-h a {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  line-height: 24px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-bottom: none;
-  text-align: center;
-  align-content: flex-end;
-  color: rgba(68,68,68,0.7);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h a,
-  .cover-wrapper.featured .menu .list-h a,
-  .cover-wrapper.focus .menu .list-h a {
-    padding: 12px 8px;
-  }
-}
-.cover-wrapper.dock .menu .list-h a i,
-.cover-wrapper.featured .menu .list-h a i,
-.cover-wrapper.focus .menu .list-h a i {
-  margin: 8px;
-}
-.cover-wrapper.dock .menu .list-h a p,
-.cover-wrapper.featured .menu .list-h a p,
-.cover-wrapper.focus .menu .list-h a p {
-  font-size: 0.875rem;
-}
-.cover-wrapper.dock .menu .list-h a.active,
-.cover-wrapper.featured .menu .list-h a.active,
-.cover-wrapper.focus .menu .list-h a.active {
-  background: var(--color-card);
-  backdrop-filter: none;
-}
-.cover-wrapper.dock .menu .list-h a.active i,
-.cover-wrapper.featured .menu .list-h a.active i,
-.cover-wrapper.focus .menu .list-h a.active i,
-.cover-wrapper.dock .menu .list-h a.active i+p,
-.cover-wrapper.featured .menu .list-h a.active i+p,
-.cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
-}
-.cover-wrapper.dock .menu .list-h a.active img+p,
-.cover-wrapper.featured .menu .list-h a.active img+p,
-.cover-wrapper.focus .menu .list-h a.active img+p {
-  color: var(--color-text);
-}
-.cover-wrapper.dock .menu .list-h a:hover,
-.cover-wrapper.featured .menu .list-h a:hover,
-.cover-wrapper.focus .menu .list-h a:hover {
-  background: var(--color-card);
-}
-.cover-wrapper.dock .top {
-  margin-bottom: 48px;
-}
-.cover-wrapper.dock .menu {
-  background: rgba(255,255,255,0.5);
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-}
-.cover-wrapper.dock .menu .list-h {
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -khtml-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -o-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  margin: 4px;
-}
-.cover-wrapper.dock .menu .list-h a+a {
-  margin-left: 4px;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h {
-    overflow-x: scroll;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
-    cursor: pointer;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
-  }
-}
-@supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.dock .menu {
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: saturate(200%) blur(20px);
-  }
-}
 @font-face {
   font-family: 'UbuntuMono';
   src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
@@ -1740,9 +1624,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1676808531295),
+    lastupdate: new Date(1676815467587),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","text"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2295,6 +2179,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
           
           
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://www.liuwenqin.icu/2023/02/19/%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E6%96%B0%E6%96%87%E7%AB%A0/" title="更多"
+                  
+                  
+                  
+                    active-action="action-https:wwwliuwenqinicu20230219E5A682E4BD95E7949FE68890E696B0E69687E7ABA0"
+                  >
+                  <i class='fa-solid fa-user fa-fw'></i>更多
+                </a>
+                
+              </li>
+            
+          
+          
 				</ul>
 			</div>
       
@@ -2416,6 +2317,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
           
             
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://www.liuwenqin.icu/2023/02/19/%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E6%96%B0%E6%96%87%E7%AB%A0/" title="更多"
+                  
+                  
+                  
+                    active-action="action-https:wwwliuwenqinicu20230219E5A682E4BD95E7949FE68890E696B0E69687E7ABA0"
+                  >
+                  <i class='fa-solid fa-user fa-fw'></i>更多
+                </a>
+                
+              </li>
+            
+          
+            
           </ul>
         </li>
 			</ul>
@@ -2433,63 +2351,80 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="half" class='cover-wrapper  search' style="display: ;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg##默认封面"></div>
 
 <div class='cover-body'>
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">刘闻钦的blog</p>
     
+    
+      <p class="subtitle">正在疯狂建设blog中 (*^_^*)</p>
     
   </div>
   <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="输入你想搜索的内容(帮你百度!)" />
+          <i class="icon fa-solid fa-search fa-fw"></i>
+        </form>
+      </div>
+    
     <div class='menu navigation'>
       <div class='list-h'>
         
+          
+            <a href="/"
+              
+              
+              active-action="action-home">
+              <p>主页</p>
+            </a>
           
             <a href="/v4/getting-started/"
               
               
               active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
+              <p>文档</p>
             </a>
           
             <a href="/faqs/"
               
               
               active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
+              <p>帮助</p>
             </a>
           
             <a href="/examples/"
               
               
               active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
+              <p>示例</p>
             </a>
           
             <a href="/contributors/"
               
               
               active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
+              <p>社区</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
+              <p>博客归档</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
               
               
               active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+              <p>源码</p>
             </a>
           
         
@@ -2551,7 +2486,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-           ①在myblog文件夹内右键打开Git Bash Here并且输入hexo new “文章名” 并且回车会在soure&#x2F;_posts下生成文件   ②在软件Typora上使用markdown语法编辑文章内容,并且保存   ③在myblog文件夹内右键打开Git Bash Here并且输入hexo s可在http://localhost:4000/内预览本地效果,网络域名还不行...
+           ①在myblog文件夹内右键打开Git Bash Here并且输入hexo new “文章名” 并且回车会在soure&#x2F;_posts下生成文件   ②在软件Typora上使用markdown语法编辑文章内容,并且保存   ③在myblog文件夹内右键打开Git Bash Here并且输入hexo s可在http://localhost:4000/ 内预览本地效果,网络域名还不...
       
     
   </div>
@@ -2560,6 +2495,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div>
         
         <time itemprop="dateCreated datePublished" datetime="2023-02-19T19:49:08+08:00">2023-02-19</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%88%86%E7%B1%BB1/">分类1</a><span class="sep"></span><a class="category-link" href="/categories/%E5%88%86%E7%B1%BB1/%E5%88%86%E7%B1%BB2/">分类2</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%88%86%E7%B1%BB1/" itemprop="url"><span itemprop="name">分类1</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E5%88%86%E7%B1%BB1/%E5%88%86%E7%B1%BB2/" itemprop="url"><span itemprop="name">分类2</span></a>
+            </span>
+          
         
       </div>
       
@@ -2661,6 +2608,11 @@ Qu...
     
       <div class='text'>
         
+          <h2>这是刘闻钦blog</h2>
+        
+        
+          <p>正在疯狂建设blog</p>
+
         
         
           <p><span id="jinrishici-sentence">这是title</span></p>
@@ -2681,7 +2633,7 @@ Qu...
           
         
           
-            <a href="mailto:me@xxx.com"
+            <a href="mailto:2856728841@qq.com"
               class="social fa-solid fa-envelope flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -2690,7 +2642,7 @@ Qu...
           
         
           
-            <a href="https://github.com/volantis-x/"
+            <a href="https://github.com/Caffeine0"
               class="social fab fa-github flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -2719,6 +2671,33 @@ Qu...
     
     
       
+  
+  <section class="widget category desktop pjax">
+    
+  <header>
+    
+      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%88%86%E7%B1%BB1/" href="/categories/%E5%88%86%E7%B1%BB1/"
+            active-action="action-categoriesE58886E7B1BB1"
+            ><div class='name'>分类1</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%88%86%E7%B1%BB1/%E5%88%86%E7%B1%BB2/" href="/categories/%E5%88%86%E7%B1%BB1/%E5%88%86%E7%B1%BB2/"
+            active-action="action-categoriesE58886E7B1BB1E58886E7B1BB2"
+            ><div class='name'>分类2</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
 
     
   
@@ -2727,10 +2706,44 @@ Qu...
     
     
       
+  
+  <section class="widget tagcloud desktop mobile pjax">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 14px; color: #999">标签1</a> <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 14px; color: #999">标签2</a>
+    </div>
+  </section>
+
 
     
   
 
+  
+    
+    
+      
+<section class="widget text desktop pjax">
+  
+  <header>
+    
+      <a target="_blank" rel="noopener" href='https://github.com/Caffeine0'><i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>点个赞吧</span></a>
+    
+  </header>
+
+
+  <div class='content'>
+    
+  </div>
+</section>
+
+    
   
 
 
@@ -2814,9 +2827,39 @@ Qu...
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-          
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
+            
+              <a href="mailto:2856728841@qq.com"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
+          
+            
+              <a href="https://github.com/Caffeine0"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
+          
+            
+              <a href="https://music.163.com/#/user/home?id=540583907"
+                class="social fas fa-headphones-alt flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
         </div>
@@ -2828,13 +2871,6 @@ Qu...
       
     
       
-        
-          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
-</div>
-        
-      
-    
-      
         Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.7.7" target="_blank" class="codename">Volantis</a>
         as theme
@@ -2842,7 +2878,7 @@ Qu...
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © 2017-2023 XXX</a></p>
 
         </div>
       
